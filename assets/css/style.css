@@ -15,11 +15,35 @@ body {
   font-size: 1.6rem;
 }
 
-.titulo {
+.title {
   text-align: center;
   font-size: 3.8rem;
 }
 
-.titulo span {
+.title span {
   font-size: 2rem;
+}
+
+/* utility */
+
+.container {
+  width: 120rem;
+  margin: 0 auto;
+}
+
+.main-nav-bg {
+  background-color: var(--secondary);
+}
+
+/* main nav styles */
+
+.main-nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: var(--white);
 }
