@@ -57,7 +57,7 @@
         <a class="button" href="#">Contactar</a>
       </div>
     </section>
-    <main class="services container shadow bg-white">
+    <main class="section-main-title container shadow bg-white">
       <h2>Mis servicios</h2>
       <div class="services-container">
         <section class="service">
@@ -156,26 +156,28 @@
         </section>
       </div>
     </main>
-    <section>
+    <section class="section-main-title">
       <h2>Contacto</h2>
-      <form action="">
+      <form class="form">
         <fieldset>
           <legend>Contactanos llenando todos los campos</legend>
-          <div>
-            <label>Nombre</label>
-            <input type="text" placeholder="Tu Nombre" />
-          </div>
-          <div>
-            <label>Teléfono</label>
-            <input type="tel" placeholder="Tu teléfono" />
-          </div>
-          <div>
-            <label>Correo</label>
-            <input type="email" placeholder="Tu Eamil" />
-          </div>
-          <div>
-            <label>Mensaje</label>
-            <textarea></textarea>
+          <div class="fields-container">
+            <div class="field">
+              <label>Nombre</label>
+              <input class="input-text" type="text" placeholder="Tu Nombre" />
+            </div>
+            <div class="field">
+              <label>Teléfono</label>
+              <input class="input-text" type="tel" placeholder="Tu teléfono" />
+            </div>
+            <div class="field">
+              <label>Correo</label>
+              <input class="input-text" type="email" placeholder="Tu Eamil" />
+            </div>
+            <div class="field">
+              <label>Mensaje</label>
+              <textarea class="input-text"></textarea>
+            </div>
           </div>
           <div>
             <input type="submit" value="Enviar" />

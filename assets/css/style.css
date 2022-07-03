@@ -91,6 +91,13 @@ h3 {
   border-radius: 0.5rem;
 }
 
+.section-main-title {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
 @media (min-width: 768px) {
   .button {
     width: auto;
@@ -174,12 +181,12 @@ h3 {
 
 /* services styles */
 
-.services {
+/* .services {
   padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
-}
+} */
 
 .services-container {
   display: flex;
@@ -221,4 +228,56 @@ h3 {
   line-height: 2;
   color: #323232;
   text-align: center;
+}
+
+/* contact styles */
+
+/* .contact {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+} */
+
+.form {
+  background-color: var(--gray);
+  width: min(60rem, 100%); /* utiliza el valor mas pequeño */
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.form fieldset {
+  border: none;
+  padding: 0;
+}
+
+.form legend {
+  color: var(--primary);
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.fields-container {
+}
+
+.field {
+  margin-bottom: 1rem;
+}
+
+.field label {
+  display: block;
+  color: var(--white);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.field .input-text {
+  width: 100%;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
 }
