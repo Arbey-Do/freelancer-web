@@ -91,11 +91,35 @@ h3 {
   border-radius: 0.5rem;
 }
 
-.section-main-title {
-  padding: 2rem;
+.button:hover {
+  cursor: pointer;
+}
+
+.w-sm-100 {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .w-sm-100 {
+    width: auto;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
   display: flex;
   flex-direction: column;
+}
+
+.gap-3rem {
   gap: 3rem;
+}
+
+.align-right {
+  justify-content: flex-end;
 }
 
 @media (min-width: 768px) {
@@ -181,12 +205,12 @@ h3 {
 
 /* services styles */
 
-/* .services {
+.services {
   padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
-} */
+}
 
 .services-container {
   display: flex;
@@ -232,16 +256,12 @@ h3 {
 
 /* contact styles */
 
-/* .contact {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-} */
-
 .form {
   background-color: var(--gray);
-  width: min(60rem, 100%); /* utiliza el valor mas pequeño */
+  width: min(
+    60rem,
+    100%
+  ); /* utiliza el valor mas pequeño entre 60rem y el 100%*/
   margin: 0 auto;
   padding: 2rem;
   border-radius: 1rem;
@@ -274,6 +294,10 @@ h3 {
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
+
+/* .field input[type="text"],
+.field input[type="tel"] {
+} */
 
 .field .input-text {
   width: 100%;
